@@ -23,7 +23,7 @@
 		*/
 		var img = document.getElementById("imgVerifyCode");
 		// 需要给出一个参数，这个参数每次都不同，这样才能干掉浏览器缓存！
-		img.src = "/tools/VerifyCodeServlet?a=" + new Date().getTime();
+		img.src = "/goods/VerifyCodeServlet?a=" + new Date().getTime();
 	}
 </script>
   </head>
@@ -35,13 +35,13 @@
 　　把<img>的src指向VerifyCodeServlet，你需要在web.xml中部署VerfiyCodeServlet
 3. 换一张
 --%>
-<form action="/tools/LoginServlet" method="post">
+<form action="/goods/LoginServlet" method="post">
 	<%-- 添加一个参数：method=login --%>
 	<input type="hidden" name="method" value="login">
 用户名：<input type="text"  name="name"/><br/>
 密　码：<input type="password" name="pwd"/><br/>
 验证码：<input type="text" name="verifyCode"/><br/>
-<img src="/tools/VerifyCodeServlet" id="imgVerifyCode"/>
+<img src="/goods/VerifyCodeServlet" id="imgVerifyCode"/>
 <a href="javascript:_hyz()">换一张</a>
 <br/>
 <input type="submit" value="提交"/>

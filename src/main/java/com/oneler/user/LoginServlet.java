@@ -1,5 +1,5 @@
 
-package com.oneler.test;
+package com.oneler.user;
 
 import java.io.IOException;
 

@@ -21,7 +21,7 @@
   </servlet>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>cn.itcast.test.web.servlet.LoginServlet</servlet-class>
+    <servlet-class>com.oneler.user.LoginServlet</servlet-class>
   </servlet>
 
 
