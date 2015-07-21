@@ -11,6 +11,11 @@ import cn.itcast.servlet.BaseServlet;
 
 public class LoginServlet extends BaseServlet {
 
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 public String login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		/*
 		 * 校验验证码 1. 获取表单中的验证码 2. 获取图片上的文字
